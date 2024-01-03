@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="signin.css">
+
+</head>
+<body>
+    <div class="hedder">
+        <div class="navbar">
+            <img src="puppy2.jpg">
+            <div class=" country_select" id="country">
+                <div class="select">
+                    <p id="text"> Select Your Country <i class="fa-solid fa-caret-down" id="moving"></i></p>
+                </div>
+                
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfuction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myfuction('Canada ')" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada </p>
+                    </li>
+                    <li class="option" onclick="myfuction('Pakistan ')" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pakistan</p>
+                    </li>
+                    <li class="option" onclick="myfuction('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myfuction('China')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>China</p>
+                    </li>
+                </ul>
+
+                
+            </div>
+             <div class="search_box">
+        <input type="text" class="searchclass" id="searchid" placeholder="Find Your Homie">
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+     </div>
+ <div class="language">
+    <p id="eng_tag">English</p>
+    <ul class="hin_eng">
+        <li onclick="languagepup('English')">English</li>
+
+        <li onclick="languagepup('Hindi')">Hindi</li>
+
+    </ul>
+
+</div>
+<div class="message">
+    <i class="fa-regular fa-comment"></i>
+</div>
+
+<div class="message">
+    <i class="fa-solid fa-bell"></i>
+</div>
+
+
+<div class="your_logo">
+<div class="girl_img" id="girl_img_id">
+    <img src="profile.png" >
+</div>
+
+<div class="gropdown" id="gropdownid">
+    <div class="nameandimg">
+        <p>Prem Pawar</p>
+    </div>
+    
+        
+    <ul >
+        <li>
+            <i class="fa-solid fa-user"></i>
+            <p>My Account</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-paw"></i>
+            <p>My Homies</p>
+        </li>
+        <hr>
+        <li>
+            <i class="fa-sharp fa-solid fa-question"></i>
+            <p>Help </p>
+        </li>
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            <p>Setting </p>
+        </li>
+        <hr>
+        <li>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>Log Out </p>
+        </li>
+    </ul>
+</div>
+</div>
+        </div>
+    </div>
+
+       <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="Email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="Password" placeholder="Password">
+                            </div>
+                            <p>Lost Password <a href="#"> Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">  Sign up</button>
+                    <button type="button" id="signinBtn" class="disable"> <a href="Details.html">Sign in </a></button>
+                    
+                    
+                </div>
+            </form>
+        </div>
+       </div>
+
+
+
+
+
+   
+    <script>
+        let country = document.getElementById('country');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+    
+        country.addEventListener('click', () =>{
+            list.classList.toggle('hidden')
+            moving.classList.toggle('roted')
+        });
+        function myfuction(payal){
+            text.innerHTML= payal;
+        }
+    
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+        language.addEventListener('click',() =>{
+        hin_eng.classList.toggle('display_div');
+    });
+    function languagepup (anyone){
+        eng_tag.innerHTML = anyone;
+
+    }
+    let girl_img_id = document.getElementById('girl_img_id');
+    let gropdownid = document.getElementById('gropdownid');
+    girl_img_id.addEventListener('click',()=>{
+        gropdownid.classList.toggle('block_div')
+    })
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    title.innerHTML = "Sign In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+}
+
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "60";
+    title.innerHTML = "Sign Up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+}
+
+</script>    
+
+</body>
+</html>

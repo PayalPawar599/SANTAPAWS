@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat box</title>
+    <link rel="stylesheet" href="puppychatbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body style=" width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,50,0.8),rgba(50, 0, 43, 0.8)),url(poster5.webp);
+background-position: center;
+background-size: cover;
+position: relative";>
+    
+
+    
+    <div class="hedder">
+        <div class="navbar">
+            <img src="puppy2.jpg">
+            <div class=" country_select" id="country">
+                <div class="select">
+                    <p id="text"> Select Your Country <i class="fa-solid fa-caret-down" id="moving"></i></p>
+                </div>
+                
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfuction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myfuction('Canada ')" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada </p>
+                    </li>
+                    <li class="option" onclick="myfuction('Pakistan ')" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pakistan</p>
+                    </li>
+                    <li class="option" onclick="myfuction('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myfuction('China')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>China</p>
+                    </li>
+                </ul>
+
+                
+            </div>
+             <div class="search_box">
+        <input type="text" class="searchclass" id="searchid" placeholder="Find Your Homie">
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+     </div>
+ <div class="language">
+    <p id="eng_tag">English</p>
+    <ul class="hin_eng">
+        <li onclick="languagepup('English')">English</li>
+
+        <li onclick="languagepup('Hindi')">Hindi</li>
+
+    </ul>
+
+</div>
+<div class="message">
+    <i class="fa-regular fa-comment"></i>
+</div>
+
+<div class="message">
+    <i class="fa-solid fa-bell"></i>
+</div>
+
+
+<div class="your_logo">
+<div class="girl_img" id="girl_img_id">
+    <img src="profile.png" >
+</div>
+
+<div class="gropdown" id="gropdownid">
+    <div class="nameandimg">
+        <p>Prem Pawar</p>
+    </div>
+    
+        
+    <ul >
+        <li>
+            <i class="fa-solid fa-user"></i>
+            <p>My Account</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-paw"></i>
+            <p>My Homies</p>
+        </li>
+        <hr>
+        <li>
+            <i class="fa-sharp fa-solid fa-question"></i>
+            <p>Help </p>
+        </li>
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            <p>Setting </p>
+        </li>
+        <hr>
+        <li>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>Log Out </p>
+        </li>
+    </ul>
+</div>
+</div>
+
+
+
+
+
+<div class="selling_page">
+    <button><i class="fa-solid fa-plus"></i>  <a href="signin.html">Donor</a> </button>
+</div>
+  
+
+        </div>
+    </div>
+
+<div class="chat_box">
+<div class="heading_chatbox">
+<div class="img_name_chat">
+<img src="prem.jpg.jpg" >
+<h2>Prem Pawar</h2>
+</div>
+<i class="fa-regular fa-x"></i>
+</div>
+
+
+<div class="see_chat">
+    <h3 id="message"></h3>
+
+</div>
+
+<div class="send_message">
+    <input type="text" placeholder="Type a message" id="text_message">
+    <input type="text" placeholder="Type a message" id="demo">
+    <i class="fa-solid fa-paper-plane" id="send_icon"></i>
+</div>
+
+
+</div>
+
+
+
+<script>
+    let moving = document.getElementById('moving');
+    let text = document.getElementById('text');
+    let list = document.getElementById('list');
+
+    country.addEventListener('click', () =>{
+        list.classList.toggle('hidden')
+        moving.classList.toggle('roted')
+    });
+    function myfuction(payal){
+        text.innerHTML= payal;
+    }
+
+    let eng_tag = document.getElementById('eng_tag');
+    let hin_eng = document.querySelector('.hin_eng');
+    let language = document.querySelector('.language');
+
+    language.addEventListener('click',() =>{
+        hin_eng.classList.toggle('display_div');
+    });
+    function languagepup (anyone){
+        eng_tag.innerHTML = anyone;
+
+    }
+    let girl_img_id = document.getElementById('girl_img_id');
+    let gropdownid = document.getElementById('gropdownid');
+    girl_img_id.addEventListener('click',()=>{
+        gropdownid.classList.toggle('block_div')
+    })
+
+
+
+let send_icon = document.getElementById('send_icon');
+let message = document.getElementById('message');
+let text_message = document.getElementById('text_message');
+let demo = document.getElementById('demo');
+
+send_icon.addEventListener('click', () =>{
+    message.innerHTML = text_message.value;
+    message.style = 'display: block';
+    text_message.value = demo.value
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

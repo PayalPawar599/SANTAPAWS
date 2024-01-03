@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="details.css">
+    <title>Details</title>
+    
+   
+</head>
+<body>
+    <div class="back">
+    <form action="">
+    <h1 a href="Puppy.html"  > <i class="fa-solid fa-arrow-left"></i> <a href="Puppy.html">Back</a> </h1>
+</div>
+      <hr>
+    <p> required fields are followed by *</p>
+    <h2>Personal Detail</h2>
+    <p>Name:*<input type="text" name="name" required></p>
+    
+    <fieldset>
+        <legend>
+            gender*
+        </legend>
+        <p>
+            male<input type="radio" name="gender" id="male" required>
+            female<input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+   
+    <p>
+        Add Title :*<textarea name="address" id="address" cols="100" rows="8" required ></textarea>
+    </p>
+    <p>
+        Description :*<textarea name="address" id="address" cols="100" rows="8" required placeholder="Include age,condition and reason for donation"></textarea>
+    </p>
+     <h2>Upload upto 3 Photos</h2>
+
+     <div style="display: inline-flex">
+        <div style="height: 200px; width: 200px;background-color: whitesmoke ; border-inline: solid;  margin-top: 50px; margin-left: 90px;"><i class="fa-light fa-camera"></i></i></div>
+        <div style="height: 200px; width: 200px;background-color: whitesmoke;border-inline: solid; border-color: black; margin-top: 50px; margin-left: 90px;"></div>
+        <div style="height: 200px; width: 200px;background-color: whitesmoke ; border-inline: solid; border-color: black; margin-top: 50px; margin-left: 90px;"></div>
+        <div style="height: 200px; width: 200px;background-color: whitesmoke ; border-inline: solid; border-color: black; margin-top: 50px; margin-left: 90px;"></div>
+    
+</div>
+          <h2>Confirm Your Location</h2>
+        
+            <p>State:* <input type="text" class="searchclass" id="searchid" placeholder="State"></p>
+          <P>City:* <input type="number" name="pincode" id="pincode" required placeholder="City"></P>
+          <P>House no.:* <input type="number" name="pincode" id="pincode" required placeholder="274/2"> </P>
+            <P>Pincode:* <input type="number" name="pincode" id="pincode" required></P>
+
+
+            <h4>We will send you confirmation by SMS </h4>
+            <p>contact:*<input type="number" name="contact" id="contact" required></p>
+
+            
+    </body>
+    </html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="productpuppy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body style=" width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,50,0.8),rgba(50, 0, 43, 0.8)),url(poster5.webp);
+background-position: center;
+background-size: cover;
+position: relative";>
+    
+    
+        <div class="hedder">
+            <div class="navbar">
+                <img src="puppy2.jpg">
+                <div class=" country_select" id="country">
+                    <div class="select">
+                        <p id="text"> Select Your Country <i class="fa-solid fa-caret-down" id="moving"></i></p>
+                    </div>
+                    
+    
+                    <ul class="option_box" id="list">
+                        <li class="option" onclick="myfuction('USA')">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>USA</p>
+                        </li>
+                        <li class="option" onclick="myfuction('Canada ')" >
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Canada </p>
+                        </li>
+                        <li class="option" onclick="myfuction('Pakistan ')" >
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Pakistan</p>
+                        </li>
+                        <li class="option" onclick="myfuction('India')">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>India</p>
+                        </li>
+                        <li class="option" onclick="myfuction('China')">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>China</p>
+                        </li>
+                    </ul>
+    
+                    
+                </div>
+                 <div class="search_box">
+            <input type="text" class="searchclass" id="searchid" placeholder="Find Your Homie">
+            <p><i class="fa-solid fa-magnifying-glass"></i></p>
+         </div>
+     <div class="language">
+        <p id="eng_tag">English</p>
+        <ul class="hin_eng">
+            <li onclick="languagepup('English')">English</li>
+    
+            <li onclick="languagepup('Hindi')">Hindi</li>
+    
+        </ul>
+    
+    </div>
+    <div class="message">
+        <i class="fa-regular fa-comment"></i>
+    </div>
+    
+    <div class="message">
+        <i class="fa-solid fa-bell"></i>
+    </div>
+    
+    
+    <div class="your_logo">
+    <div class="girl_img" id="girl_img_id">
+        <img src="profile.png" >
+    </div>
+    
+    <div class="gropdown" id="gropdownid">
+        <div class="nameandimg">
+            <p>Prem Pawar</p>
+        </div>
+        
+            
+        <ul >
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <p>My Account</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-paw"></i>
+                <p>My Homies</p>
+            </li>
+            <hr>
+            <li>
+                <i class="fa-sharp fa-solid fa-question"></i>
+                <p>Help </p>
+            </li>
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                <p>Setting </p>
+            </li>
+            <hr>
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <p>Log Out </p>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="selling_page">
+        <button><i class="fa-solid fa-plus"></i> <a href="signin.html">Donor</a> </button>
+    </div>
+      
+    
+            </div>
+        </div>
+
+        
+
+
+
+<div class="product_img">
+    <div class="image_discription">
+
+<div class="swiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img src="dog1.jpg" ></div>
+      <div class="swiper-slide"><img src="second2.webp"></div>
+      <div class="swiper-slide"><img src="first3.jpg" ></div>
+     
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  
+   
+    <div class="swiper-button-prev" id="prev"></div>
+    <div class="swiper-button-next" id="next"></div>
+  </div>
+
+
+  <div class="description">
+    <h3>Description</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur <br>
+         adipisicing elit. Blanditiis amet praesentium <br>
+         est nesciunt laborum quasi sint modi voluptate, <br>
+         tempora necessitatibus?</p>
+  </div>
+    </div>
+
+    <div class="product_details">
+        <div class="box" >
+            <div class="name">
+                <h3> Prem Pawar</h3>
+                <div>
+                    <p><i class="fa-solid fa-share-nodes"></i></p>
+                    <p><i class="fa-regular fa-heart"></i></p>
+                </div>
+            </div>
+            <span> Street Dog</span>
+            <div class="Location">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, asperiores.</p>
+                <p>Today</p>
+            </div>
+        </div>
+        
+<div class="box" id="box2">
+    <p class="Donor_description"> Donor Description</p>
+    <div class="donor_details">
+        <img src="prem.JPG" >
+        <div>
+            <h2>Prem Pawar</h2>
+            <p> Member Since 2022</p>
+        </div>
+    </div>
+    <a href="puppychatbox.html"> Chat With Donor</a>
+</div>
+    
+
+<div class="box" id="box3">
+    <h2>Posted in</h2>
+    <p>Bandra East, Mumbai</p>
+    <img src="bandramap.webp" >
+</div>
+
+
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  let moving = document.getElementById('moving');
+    let text = document.getElementById('text');
+    let list = document.getElementById('list');
+
+    country.addEventListener('click', () =>{
+        list.classList.toggle('hidden')
+        moving.classList.toggle('roted')
+    });
+    function myfuction(payal){
+        text.innerHTML= payal;
+    }
+
+    let eng_tag = document.getElementById('eng_tag');
+    let hin_eng = document.querySelector('.hin_eng');
+    let language = document.querySelector('.language');
+
+    language.addEventListener('click',() =>{
+        hin_eng.classList.toggle('display_div');
+    });
+    function languagepup (anyone){
+        eng_tag.innerHTML = anyone;
+
+    }
+    let girl_img_id = document.getElementById('girl_img_id');
+    let gropdownid = document.getElementById('gropdownid');
+    girl_img_id.addEventListener('click',()=>{
+        gropdownid.classList.toggle('block_div')
+    })
+
+
+
+    
+   
+
+
+
+
+
+    const swiper = new Swiper('.swiper', {
+
+
+loop: true,
+
+
+pagination: {
+  el: '.swiper-pagination',
+},
+
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+
+
+</script>
+
+
+</body>
+</html>
